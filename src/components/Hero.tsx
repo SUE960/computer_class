@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* 왼쪽: 히어로 배너 (2/3) */}
           <div className="lg:col-span-2">
-            <div className="bg-primary-100 rounded-xl p-8 md:p-12 relative overflow-hidden min-h-[400px] flex flex-col justify-center">
+            <div className="bg-white rounded-xl p-8 md:p-12 shadow-xl min-h-[400px] flex flex-col justify-center">
               {/* 메인 콘텐츠 */}
               <div className="text-center">
                 {/* 제목 */}
@@ -27,17 +27,8 @@ const Hero = () => {
                 </div>
 
                 {/* 배지 */}
-                <div className="inline-block bg-primary-200 text-primary-800 px-6 py-3 rounded-full text-lg font-semibold">
+                <div className="inline-block bg-primary-100 text-primary-800 px-6 py-3 rounded-full text-lg font-semibold">
                   기초에서 자격증까지 개별맞춤지도
-                </div>
-              </div>
-
-              {/* 장식 요소 (하단 우측) */}
-              <div className="absolute bottom-0 right-0 opacity-10">
-                <div className="grid grid-cols-3 gap-2 p-4">
-                  {[...Array(9)].map((_, i) => (
-                    <div key={i} className="w-8 h-8 bg-primary-600 rounded"></div>
-                  ))}
                 </div>
               </div>
             </div>
