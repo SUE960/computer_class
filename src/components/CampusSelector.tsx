@@ -1,5 +1,3 @@
-import { MapPin } from 'lucide-react'
-
 const CampusSelector = () => {
   return (
     <section id="location" className="py-16 bg-gray-50">
@@ -15,7 +13,11 @@ const CampusSelector = () => {
 
         <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12">
           <div className="flex items-start gap-4 mb-6">
-            <MapPin className="w-8 h-8 text-primary-600 flex-shrink-0 mt-1" />
+            <img 
+              src="/icon/free-icon-map-1865269.png" 
+              alt="지도 위치 아이콘" 
+              className="w-8 h-8 object-contain flex-shrink-0"
+            />
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">학원 위치</h3>
               <p className="text-lg text-gray-700 mb-1">
