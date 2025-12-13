@@ -35,10 +35,10 @@ const About = () => {
             <img 
               src="/icon/free-icon-list-18094401.png" 
               alt="리스트 아이콘" 
-              className="w-8 h-8 object-contain mt-1"
+              className="w-8 h-8 object-contain mt-1 ml-2"
             />
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-              영도웹컴퓨터학원을 선택해야하는 이유
+              영도웹컴퓨터학원 선택 이유
             </h2>
           </div>
         </div>
