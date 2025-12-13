@@ -15,11 +15,12 @@ const Hero = () => {
                 className="w-full h-full object-cover"
               />
               {/* 텍스트 오버레이 */}
-              <div className="absolute inset-0 flex flex-col justify-center items-center px-6 md:px-12">
-                <p className="text-white text-xl md:text-2xl lg:text-3xl font-semibold text-center mb-4 leading-relaxed">
-                  30년 노하우와 최신 트렌드 지식을 바탕으로 최적의 수업을 선사합니다
-                </p>
-                <div className="bg-white rounded-full px-6 py-3 inline-block">
+              <div className="absolute inset-0 flex flex-col justify-center items-start px-6 md:px-12">
+                <div className="text-white text-xl md:text-2xl lg:text-3xl font-semibold text-left mb-4 leading-relaxed">
+                  <p>30년 노하우와 최신 트렌드 지식을 바탕으로</p>
+                  <p>최적의 수업을 선사합니다</p>
+                </div>
+                <div className="bg-white rounded-full px-6 py-3">
                   <p className="text-gray-900 font-semibold text-lg md:text-xl">
                     기초에서 자격증까지 개별맞춤지도
                   </p>
