@@ -6,6 +6,11 @@
   body {
     @apply text-gray-900 antialiased;
   }
+  
+  /* 한글 줄바꿈 방지 */
+  * {
+    word-break: keep-all;
+  }
 }
 
 @layer components {
