@@ -51,7 +51,7 @@ const Hero = () => {
                   <img 
                     src="/icon/free-icon-consultation-4167025.png" 
                     alt="상담 아이콘" 
-                    className="w-8 h-8 group-hover:scale-110 transition-transform"
+                    className="w-8 h-8 object-contain group-hover:scale-110 transition-transform"
                   />
                 </IconWrapper>
                 <span className="text-sm font-medium text-gray-700 block">온라인</span>
