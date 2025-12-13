@@ -48,7 +48,11 @@ const Hero = () => {
               {/* 온라인 예약상담 */}
               <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 text-center group">
                 <IconWrapper bgColor="bg-gradient-to-br from-blue-100 to-blue-200">
-                  <MessageCircle className="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform" strokeWidth={2.5} />
+                  <img 
+                    src="/icon/free-icon-consultation-4167025.png" 
+                    alt="상담 아이콘" 
+                    className="w-8 h-8 group-hover:scale-110 transition-transform"
+                  />
                 </IconWrapper>
                 <span className="text-sm font-medium text-gray-700 block">온라인</span>
                 <span className="text-sm font-medium text-gray-700 block">예약상담</span>
