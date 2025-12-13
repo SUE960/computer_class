@@ -27,11 +27,11 @@ const NoticeBoard = ({ notices }: NoticeBoardProps) => {
     <section className="py-12 bg-white">
       <div className="container-custom">
         <div className="rounded-xl p-6 md:p-8">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-start gap-5 mb-6">
             <img 
               src="/icon/free-icon-announcements-12003595.png" 
               alt="공지사항 아이콘" 
-              className="w-8 h-8 object-contain"
+              className="w-8 h-8 object-contain mt-1"
             />
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
