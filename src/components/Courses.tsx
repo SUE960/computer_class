@@ -1,34 +1,28 @@
-import { Code, Calculator, Award } from 'lucide-react'
-
 const Courses = () => {
   const courseCategories = [
     {
-      icon: Code,
       title: 'IT개발',
       description: '프로그래밍, 소프트웨어 개발, 시스템 구축',
       courses: ['Java 개발자', 'Python 개발자', 'C++ 개발자', '시스템 아키텍트'],
-      color: 'bg-blue-600',
+      hasNationalSupport: true,
     },
     {
-      icon: Award,
       title: '컴퓨터 자격증',
       description: '컴퓨터활용능력, ITQ, 워드프로세서',
       courses: ['컴퓨터활용능력 1급', '컴퓨터활용능력 2급', 'ITQ OA Master', '워드프로세서'],
-      color: 'bg-purple-600',
+      hasNationalSupport: true,
     },
     {
-      icon: Code,
       title: '웹개발',
       description: '프론트엔드, 백엔드, 풀스택 개발',
       courses: ['React 개발자', 'Node.js 개발자', '풀스택 개발자'],
-      color: 'bg-green-600',
+      hasNationalSupport: false,
     },
     {
-      icon: Calculator,
       title: '세무회계·OA',
       description: '회계, 세무, 사무 자동화',
       courses: ['세무사', '회계사', 'OA 전문가'],
-      color: 'bg-indigo-600',
+      hasNationalSupport: true,
     },
   ]
 
@@ -46,7 +40,6 @@ const Courses = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {courseCategories.map((category, index) => {
-            const Icon = category.icon
             return (
               <div
                 key={index}
@@ -58,9 +51,11 @@ const Courses = () => {
                     <h3 className="text-xl font-bold text-gray-900">
                       {category.title}
                     </h3>
-                    <span className="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">
-                      국비지원
-                    </span>
+                    {category.hasNationalSupport && (
+                      <span className="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">
+                        국비지원
+                      </span>
+                    )}
                   </div>
                   <p className="text-gray-600 mb-4 text-sm">
                     {category.description}
