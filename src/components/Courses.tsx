@@ -1,4 +1,4 @@
-import { Code, Palette, Gamepad2, Building2, Calculator, Brain } from 'lucide-react'
+import { Code, Calculator, Brain } from 'lucide-react'
 
 const Courses = () => {
   const courseCategories = [
@@ -22,27 +22,6 @@ const Courses = () => {
       description: '프론트엔드, 백엔드, 풀스택 개발',
       courses: ['React 개발자', 'Node.js 개발자', '풀스택 개발자'],
       color: 'bg-green-600',
-    },
-    {
-      icon: Palette,
-      title: '편집디자인',
-      description: '그래픽 디자인, 편집 디자인, 브랜딩',
-      courses: ['그래픽 디자이너', '편집 디자이너', '브랜드 디자이너'],
-      color: 'bg-pink-600',
-    },
-    {
-      icon: Building2,
-      title: '건축·산업디자인',
-      description: '건축 설계, 인테리어, 제품 디자인',
-      courses: ['건축 설계사', '인테리어 디자이너', '제품 디자이너'],
-      color: 'bg-orange-600',
-    },
-    {
-      icon: Gamepad2,
-      title: '게임·영상·마야',
-      description: '게임 개발, 영상 제작, 3D 모델링',
-      courses: ['게임 개발자', '영상 편집자', '3D 아티스트'],
-      color: 'bg-red-600',
     },
     {
       icon: Calculator,
