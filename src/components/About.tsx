@@ -1,42 +1,40 @@
-import { GraduationCap, BookOpen, Users, Award, Target, Lightbulb } from 'lucide-react'
-
 const About = () => {
   const features = [
     {
-      icon: GraduationCap,
       title: '30년 노하우',
       description: '오랜 경험과 검증된 교육 시스템',
-      color: 'bg-blue-600',
+      bgColor: 'bg-blue-50',
+      hoverColor: 'hover:bg-blue-100',
     },
     {
-      icon: Lightbulb,
       title: '최신 트렌드',
       description: '현장에서 요구하는 최신 기술 반영',
-      color: 'bg-yellow-600',
+      bgColor: 'bg-yellow-50',
+      hoverColor: 'hover:bg-yellow-100',
     },
     {
-      icon: Target,
       title: '개별 맞춤 지도',
       description: '기초에서 자격증까지 개인별 맞춤 교육',
-      color: 'bg-green-600',
+      bgColor: 'bg-green-50',
+      hoverColor: 'hover:bg-green-100',
     },
     {
-      icon: BookOpen,
       title: '체계적 커리큘럼',
       description: '단계별 학습으로 실력 향상',
-      color: 'bg-purple-600',
+      bgColor: 'bg-purple-50',
+      hoverColor: 'hover:bg-purple-100',
     },
     {
-      icon: Users,
       title: '소규모 수업',
       description: '집중도 높은 소규모 반 운영',
-      color: 'bg-pink-600',
+      bgColor: 'bg-pink-50',
+      hoverColor: 'hover:bg-pink-100',
     },
     {
-      icon: Award,
       title: '자격증 취득 지원',
       description: '다양한 자격증 취득까지 완벽 지원',
-      color: 'bg-red-600',
+      bgColor: 'bg-red-50',
+      hoverColor: 'hover:bg-red-100',
     },
   ]
 
@@ -65,15 +63,11 @@ const About = () => {
         {/* 특징 카드 그리드 */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => {
-            const Icon = feature.icon
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+                className={`${feature.bgColor} ${feature.hoverColor} rounded-xl p-6 md:p-8 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100`}
               >
-                <div className={`w-16 h-16 rounded-xl ${feature.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className="w-8 h-8 text-white" />
-                </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {feature.title}
                 </h3>
