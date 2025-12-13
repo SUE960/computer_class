@@ -29,9 +29,9 @@ const Hero = () => {
               {/* 스와이프 인디케이터 */}
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center gap-2">
                 <div className="flex gap-1">
-                  <div className="w-8 h-1 bg-primary-600 rounded-full"></div>
+                  <div className="w-8 h-1 bg-gray-900 rounded-full"></div>
                 </div>
-                <span className="text-xs text-white font-medium ml-2">1/1</span>
+                <span className="text-xs text-gray-900 font-medium ml-2">1/1</span>
               </div>
             </div>
           </div>
