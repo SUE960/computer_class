@@ -52,25 +52,22 @@ const Courses = () => {
                 key={index}
                 className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 group"
               >
-                {/* 아이콘 헤더 */}
-                <div className={`${category.color} p-6`}>
-                  <div className="flex items-center justify-between">
-                    <Icon className="w-12 h-12 text-white" />
-                    <span className="text-white/80 text-sm font-medium">국비지원 가능</span>
-                  </div>
-                </div>
-
                 {/* 콘텐츠 */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    {category.title}
-                  </h3>
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-xl font-bold text-gray-900">
+                      {category.title}
+                    </h3>
+                    <span className="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">
+                      국비지원
+                    </span>
+                  </div>
                   <p className="text-gray-600 mb-4 text-sm">
                     {category.description}
                   </p>
 
                   {/* 과정 목록 */}
-                  <div className="space-y-2 mb-4">
+                  <div className="space-y-2">
                     {category.courses.map((course, courseIndex) => (
                       <div
                         key={courseIndex}
@@ -81,14 +78,6 @@ const Courses = () => {
                       </div>
                     ))}
                   </div>
-
-                  {/* 버튼 */}
-                  <a
-                    href="#"
-                    className="block w-full text-center py-2 px-4 bg-primary-50 text-primary-600 rounded-lg font-semibold hover:bg-primary-100 transition-colors group-hover:bg-primary-600 group-hover:text-white"
-                  >
-                    과정 상세보기
-                  </a>
                 </div>
               </div>
             )
