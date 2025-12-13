@@ -69,9 +69,9 @@ const Header = () => {
 
           {/* 우측 연락처 */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a href="tel:051-413-1234" className="text-sm text-gray-700 hover:text-primary-600 flex items-center gap-1 whitespace-nowrap">
+            <a href="tel:051-404-2966" className="text-sm text-gray-700 hover:text-primary-600 flex items-center gap-1 whitespace-nowrap">
               <Phone className="w-4 h-4" />
-              051-413-1234
+              051-404-2966
             </a>
           </div>
 
@@ -109,9 +109,9 @@ const Header = () => {
               </div>
             ))}
             <div className="pt-4 border-t">
-              <a href="tel:051-413-1234" className="block px-4 py-2 text-gray-700 hover:bg-primary-50 rounded whitespace-nowrap flex items-center gap-2">
+              <a href="tel:051-404-2966" className="block px-4 py-2 text-gray-700 hover:bg-primary-50 rounded whitespace-nowrap flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                051-413-1234
+                051-404-2966
               </a>
             </div>
           </div>

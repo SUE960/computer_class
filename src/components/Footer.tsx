@@ -43,8 +43,8 @@ const Footer = () => {
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-primary-400" />
-                <a href="tel:051-413-1234" className="text-white font-semibold hover:text-primary-400 transition-colors">
-                  대표번호: 051-413-1234
+                <a href="tel:051-404-2966" className="text-white font-semibold hover:text-primary-400 transition-colors">
+                  대표번호: 051-404-2966
                 </a>
               </div>
               <div className="flex items-center gap-2">

@@ -99,8 +99,8 @@ const Hero = () => {
                 <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg p-2">
                   <Phone className="w-5 h-5 text-gray-700" strokeWidth={2.5} />
                 </div>
-                <a href="tel:051-413-1234" className="text-lg font-bold text-gray-900">
-                  051-413-1234
+                <a href="tel:051-404-2966" className="text-lg font-bold text-gray-900">
+                  051-404-2966
                 </a>
               </div>
               <p className="text-xs text-gray-600">
