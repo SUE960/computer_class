@@ -8,12 +8,12 @@ const Hero = () => {
           {/* 왼쪽: 히어로 배너 (2/3) */}
           <div className="lg:col-span-2 flex">
             <div className="bg-white rounded-xl p-8 md:p-12 shadow-xl w-full flex flex-col justify-center">
-              {/* 배너 이미지 */}
-              <img 
-                src="/banner.png" 
-                alt="영도웹컴퓨터학원 배너" 
-                className="w-full h-auto object-contain"
-              />
+              {/* 배너 텍스트 */}
+              <div className="text-center">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-700">
+                  영도웹컴퓨터학원
+                </h1>
+              </div>
             </div>
           </div>
 
