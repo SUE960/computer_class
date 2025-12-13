@@ -1,69 +1,130 @@
-import { GraduationCap, Users, Award, BookOpen } from 'lucide-react'
+import { Search, MessageCircle, Calculator, Calendar, MapPin, ChevronLeft, ChevronRight, Pause, Phone } from 'lucide-react'
 
 const Hero = () => {
-  const stats = [
-    { icon: GraduationCap, label: '교육과정', value: '다양' },
-    { icon: Users, label: '수강생', value: '만족도 높음' },
-    { icon: Award, label: '자격증', value: '취득 지원' },
-    { icon: BookOpen, label: '수업시간', value: '오전/오후' },
-  ]
-
   return (
-    <section className="relative bg-primary-700 text-white overflow-hidden">
-      {/* 배경 패턴 */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }}></div>
-      </div>
+    <section className="bg-gray-50 py-8">
+      <div className="container-custom">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* 왼쪽: 히어로 배너 (2/3) */}
+          <div className="lg:col-span-2">
+            <div className="bg-primary-100 rounded-xl p-8 md:p-12 relative overflow-hidden">
+              {/* 배지 */}
+              <div className="absolute top-6 left-6 bg-primary-200 text-primary-800 px-4 py-2 rounded-full text-sm font-medium">
+                K-디지털 트레이닝
+              </div>
 
-      <div className="container-custom relative z-10 py-20 lg:py-32">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            영도웹컴퓨터학원
-            <br />
-            <span className="text-yellow-300">완전초보과정부터 자격증반까지</span>
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-primary-100">
-            부산 영도구 지역의 전문 컴퓨터 교육기관
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#" className="btn-secondary bg-white text-primary-600 hover:bg-gray-50">
-              국비지원 과정 보기
-            </a>
-            <a href="#" className="btn-secondary border-white text-white hover:bg-white/10">
-              온라인 상담 신청
-            </a>
+              {/* 생성형 AI 배지 */}
+              <div className="absolute top-6 right-6 bg-white rounded-full w-20 h-20 flex flex-col items-center justify-center shadow-lg">
+                <span className="text-xs font-bold text-primary-700">생성형 AI</span>
+                <span className="text-lg font-bold text-primary-600">AI</span>
+              </div>
+
+              {/* 메인 콘텐츠 */}
+              <div className="mt-16 md:mt-20">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                  <span className="text-primary-700">빅데이터 분석 및 AI</span>
+                  <br />
+                  <span className="text-gray-900">개발 전문가 취업캠프</span>
+                </h1>
+                
+                {/* 해시태그 */}
+                <div className="flex gap-2 mt-4">
+                  <span className="bg-primary-600 text-white px-3 py-1 rounded text-sm font-medium">#머신러닝</span>
+                  <span className="bg-primary-600 text-white px-3 py-1 rounded text-sm font-medium">#딥러닝</span>
+                </div>
+              </div>
+
+              {/* 슬라이더 네비게이션 */}
+              <div className="absolute bottom-6 left-6 flex items-center gap-2">
+                <button className="p-2 hover:bg-white/20 rounded">
+                  <ChevronLeft className="w-4 h-4 text-gray-700" />
+                </button>
+                <span className="text-sm text-gray-700 font-medium">04 | 09</span>
+                <button className="p-2 hover:bg-white/20 rounded">
+                  <ChevronRight className="w-4 h-4 text-gray-700" />
+                </button>
+                <button className="p-2 hover:bg-white/20 rounded ml-2">
+                  <Pause className="w-4 h-4 text-gray-700" />
+                </button>
+              </div>
+
+              {/* 3D 그래픽 요소 (간단한 표현) */}
+              <div className="absolute bottom-0 right-0 opacity-20">
+                <div className="grid grid-cols-3 gap-2 p-4">
+                  {[...Array(9)].map((_, i) => (
+                    <div key={i} className="w-8 h-8 bg-primary-600 rounded"></div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 오른쪽: 검색 및 유틸리티 (1/3) */}
+          <div className="lg:col-span-1 space-y-4">
+            {/* 검색 바 */}
+            <div className="bg-white rounded-xl p-4 shadow-md">
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  placeholder="원하는 과정을 검색해보세요!"
+                  className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-sm"
+                />
+                <button className="bg-primary-600 text-white px-4 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+                  <Search className="w-5 h-5" />
+                </button>
+              </div>
+
+              {/* 인기 검색 태그 */}
+              <div className="flex flex-wrap gap-2 mt-4">
+                {['#자바', '#앱개발', '#파이썬', '#인공지능', '#데이터', '#정보보안'].map((tag, index) => (
+                  <a
+                    key={index}
+                    href="#"
+                    className="bg-primary-50 text-primary-700 px-3 py-1 rounded text-sm hover:bg-primary-100 transition-colors"
+                  >
+                    {tag}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* 빠른 링크 그리드 */}
+            <div className="grid grid-cols-2 gap-3">
+              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow text-center">
+                <MessageCircle className="w-8 h-8 mx-auto mb-2 text-primary-600" />
+                <span className="text-sm font-medium text-gray-700">온라인 예약상담</span>
+              </a>
+              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow text-center">
+                <Calculator className="w-8 h-8 mx-auto mb-2 text-primary-600" />
+                <span className="text-sm font-medium text-gray-700">수강료 조회</span>
+              </a>
+              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow text-center">
+                <Calendar className="w-8 h-8 mx-auto mb-2 text-primary-600" />
+                <span className="text-sm font-medium text-gray-700">캠퍼스 개강일정</span>
+              </a>
+              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow text-center">
+                <MapPin className="w-8 h-8 mx-auto mb-2 text-primary-600" />
+                <span className="text-sm font-medium text-gray-700">캠퍼스 위치조회</span>
+              </a>
+            </div>
+
+            {/* 연락처 정보 */}
+            <div className="bg-white rounded-xl p-4 shadow-md">
+              <div className="flex items-center gap-2 mb-2">
+                <Phone className="w-5 h-5 text-primary-600" />
+                <a href="tel:051-413-1234" className="text-lg font-bold text-gray-900">
+                  051-413-1234
+                </a>
+              </div>
+              <p className="text-xs text-gray-600">
+                주말·공휴일 상담 및 접수가 가능합니다
+              </p>
+            </div>
           </div>
         </div>
-
-        {/* 통계 섹션 */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
-          {stats.map((stat, index) => {
-            const Icon = stat.icon
-            return (
-              <div
-                key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20"
-              >
-                <Icon className="w-8 h-8 mx-auto mb-3 text-yellow-300" />
-                <div className="text-3xl font-bold mb-1">{stat.value}</div>
-                <div className="text-sm text-primary-100">{stat.label}</div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
-
-      {/* 하단 웨이브 */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
-        </svg>
       </div>
     </section>
   )
 }
 
 export default Hero
-
