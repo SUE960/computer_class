@@ -35,8 +35,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* 로고 */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-primary-600 whitespace-nowrap">
-              영도웹컴퓨터학원
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/logoimg.jpg" 
+                alt="영도웹컴퓨터학원" 
+                className="h-12 object-contain"
+              />
             </Link>
           </div>
 
