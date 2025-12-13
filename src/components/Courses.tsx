@@ -4,25 +4,21 @@ const Courses = () => {
       title: 'IT개발',
       description: '프로그래밍, 소프트웨어 개발, 시스템 구축',
       courses: ['Java 개발자', 'Python 개발자', 'C++ 개발자', '시스템 아키텍트'],
-      hasNationalSupport: true,
     },
     {
       title: '컴퓨터 자격증',
       description: '컴퓨터활용능력, ITQ, 워드프로세서',
       courses: ['컴퓨터활용능력 1급', '컴퓨터활용능력 2급', 'ITQ OA Master', '워드프로세서'],
-      hasNationalSupport: true,
     },
     {
-      title: '웹개발',
-      description: '프론트엔드, 백엔드, 풀스택 개발',
-      courses: ['React 개발자', 'Node.js 개발자', '풀스택 개발자'],
-      hasNationalSupport: false,
+      title: '왕초보반',
+      description: '컴퓨터 기초부터 시작하는 완전 초보자 과정',
+      courses: ['컴퓨터 기초', '한글/워드 기초', '엑셀 기초', '인터넷 활용'],
     },
     {
       title: '세무회계·OA',
       description: '회계, 세무, 사무 자동화',
       courses: ['세무사', '회계사', 'OA 전문가'],
-      hasNationalSupport: true,
     },
   ]
 
@@ -47,15 +43,10 @@ const Courses = () => {
               >
                 {/* 콘텐츠 */}
                 <div className="p-6">
-                  <div className="flex items-center justify-between mb-2">
+                  <div className="mb-2">
                     <h3 className="text-xl font-bold text-gray-900">
                       {category.title}
                     </h3>
-                    {category.hasNationalSupport && (
-                      <span className="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">
-                        국비지원
-                      </span>
-                    )}
                   </div>
                   <p className="text-gray-600 mb-4 text-sm">
                     {category.description}
@@ -79,24 +70,6 @@ const Courses = () => {
           })}
         </div>
 
-        {/* 국비지원 안내 */}
-        <div className="mt-12 bg-primary-50 rounded-xl p-8 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            국비지원 과정 안내
-          </h3>
-          <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-            고용노동부에서 인정한 우수 교육기관으로, 다양한 국비지원 과정을 제공합니다.
-            수강료 전액 또는 일부를 지원받을 수 있습니다.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#" className="btn-primary">
-              국비지원 신청하기
-            </a>
-            <a href="#" className="btn-secondary">
-              지원제도 안내
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   )
