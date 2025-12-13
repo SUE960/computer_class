@@ -4,10 +4,10 @@ const Hero = () => {
   return (
     <section className="bg-gray-50 py-8">
       <div className="container-custom">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:items-stretch">
           {/* 왼쪽: 히어로 배너 (2/3) */}
-          <div className="lg:col-span-2">
-            <div className="bg-white rounded-xl p-8 md:p-12 shadow-xl min-h-[400px] flex flex-col justify-center">
+          <div className="lg:col-span-2 flex">
+            <div className="bg-white rounded-xl p-8 md:p-12 shadow-xl w-full flex flex-col justify-center">
               {/* 메인 콘텐츠 */}
               <div className="text-center">
                 {/* 제목 */}
