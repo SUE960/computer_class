@@ -145,7 +145,20 @@ const Footer = () => {
               <p>부산 영도구 동삼로 84 신협 4층</p>
               <p>동삼동 일동미라주아파트 근처</p>
             </div>
-            <p>© 2024 영도웹컴퓨터학원. All rights reserved.</p>
+            <div className="text-center md:text-right">
+              <p>© 2024 영도웹컴퓨터학원. All rights reserved.</p>
+              <p className="mt-2">
+                <a 
+                  href="https://www.flaticon.com/kr/free-icons/" 
+                  title="상의 아이콘" 
+                  className="hover:text-primary-400 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상의 아이콘 제작자: bukeicon - Flaticon
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
