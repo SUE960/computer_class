@@ -80,7 +80,7 @@ const Hero = () => {
               </a>
 
               {/* 학원 위치조회 */}
-              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 text-center group">
+              <a href="#location" className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 text-center group">
                 <div className="flex items-center justify-center w-16 h-16 mx-auto mb-3">
                   <img 
                     src="/icon/free-icon-map-1865269.png" 
