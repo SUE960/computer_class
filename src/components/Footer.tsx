@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from 'lucide-react'
+import { Phone, Mail, MapPin } from 'lucide-react'
 
 const Footer = () => {
   const footerLinks = {
@@ -27,12 +27,6 @@ const Footer = () => {
       { label: '사이트맵', href: '#' },
     ],
   }
-
-  const socialLinks = [
-    { icon: Facebook, label: '페이스북', href: '#' },
-    { icon: Instagram, label: '인스타그램', href: '#' },
-    { icon: Youtube, label: '유튜브', href: '#' },
-  ]
 
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -102,39 +96,6 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
-
-        {/* 소셜 미디어 */}
-        <div className="border-t border-gray-800 pt-8 mb-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-6">
-              <span className="text-sm text-gray-400">Follow us:</span>
-              {socialLinks.map((social, index) => {
-                const Icon = social.icon
-                return (
-                  <a
-                    key={index}
-                    href={social.href}
-                    className="text-gray-400 hover:text-primary-400 transition-colors"
-                    aria-label={social.label}
-                  >
-                    <Icon className="w-5 h-5" />
-                  </a>
-                )
-              })}
-            </div>
-            <div className="flex items-center gap-4 text-sm">
-              {footerLinks.legal.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="text-gray-400 hover:text-primary-400 transition-colors"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
           </div>
         </div>
 
