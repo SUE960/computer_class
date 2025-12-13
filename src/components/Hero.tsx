@@ -88,7 +88,7 @@ const Hero = () => {
                     className="w-12 h-12 object-contain group-hover:scale-110 transition-transform"
                   />
                 </div>
-                <span className="text-sm font-medium text-gray-700 block">수업</span>
+                <span className="text-sm font-medium text-gray-700 block">학원</span>
                 <span className="text-sm font-medium text-gray-700 block">위치조회</span>
               </a>
             </div>
