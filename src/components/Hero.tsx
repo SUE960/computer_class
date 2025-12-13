@@ -80,7 +80,11 @@ const Hero = () => {
               {/* 캠퍼스 위치조회 */}
               <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 text-center group">
                 <div className="flex items-center justify-center w-16 h-16 mx-auto mb-3">
-                  <MapPin className="w-12 h-12 text-purple-600 group-hover:scale-110 transition-transform" strokeWidth={2.5} />
+                  <img 
+                    src="/icon/free-icon-map-1865269.png" 
+                    alt="지도 위치 아이콘" 
+                    className="w-12 h-12 object-contain group-hover:scale-110 transition-transform"
+                  />
                 </div>
                 <span className="text-sm font-medium text-gray-700 block">캠퍼스</span>
                 <span className="text-sm font-medium text-gray-700 block">위치조회</span>
