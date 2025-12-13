@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Menu, X, Phone, User, Search } from 'lucide-react'
+import { Menu, X, Phone, Search } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const Header = () => {

@@ -1,11 +1,6 @@
 import { MapPin } from 'lucide-react'
 
-interface CampusSelectorProps {
-  selectedCampus: string
-  onSelectCampus: (campus: string) => void
-}
-
-const CampusSelector = ({ selectedCampus, onSelectCampus }: CampusSelectorProps) => {
+const CampusSelector = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container-custom">

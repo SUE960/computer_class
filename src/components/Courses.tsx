@@ -1,4 +1,4 @@
-import { Code, Palette, Gamepad2, Video, Building2, Calculator, Brain } from 'lucide-react'
+import { Code, Palette, Gamepad2, Building2, Calculator, Brain } from 'lucide-react'
 
 const Courses = () => {
   const courseCategories = [
