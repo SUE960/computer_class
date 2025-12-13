@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Menu, X, Phone, User, Search } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,8 +16,8 @@ const Header = () => {
       submenu: ['기관소개', '왜 그린인가', '기관연혁', '사업영역', '제휴대학 혜택', '제휴 서비스', '언론보도&뉴스'],
     },
     {
-      label: '지점안내',
-      submenu: ['지점소개', '강사소개', '위치안내'],
+      label: '학원안내',
+      submenu: ['학원소개', '강사소개', '찾아오시는 길'],
     },
     {
       label: '국비과정',
@@ -28,7 +29,7 @@ const Header = () => {
     },
     {
       label: '커뮤니티',
-      submenu: ['공지사항', '그린스터디', '그린세미나', '수강후기', '지점행사', '그린채널', '그린매거진', '자격증정보', '동영상강좌'],
+      submenu: ['공지사항', '수강후기', '자격증정보'],
     },
     {
       label: '포트폴리오',
@@ -55,16 +56,14 @@ const Header = () => {
         <div className="container-custom">
           <div className="flex items-center justify-between py-2">
             <div className="flex items-center space-x-4">
-              <a href="#" className="hover:text-primary-200 transition-colors">그린채널</a>
+              <Link to="/" className="hover:text-primary-200 transition-colors">홈</Link>
               <span>|</span>
-              <a href="#" className="hover:text-primary-200 transition-colors">그린매거진</a>
-              <span>|</span>
-              <a href="#" className="hover:text-primary-200 transition-colors">유튜브</a>
+              <Link to="/notice" className="hover:text-primary-200 transition-colors">공지사항</Link>
             </div>
             <div className="flex items-center space-x-4">
-              <a href="#" className="hover:text-primary-200 transition-colors flex items-center gap-1">
+              <a href="tel:051-413-1234" className="hover:text-primary-200 transition-colors flex items-center gap-1">
                 <Phone className="w-4 h-4" />
-                <span>1588.9780</span>
+                <span>051-413-1234</span>
               </a>
             </div>
           </div>
@@ -76,9 +75,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* 로고 */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold text-primary-600">
-              교육기관
-            </a>
+            <Link to="/" className="text-2xl font-bold text-primary-600">
+              영도웹컴퓨터학원
+            </Link>
           </div>
 
           {/* 데스크톱 메뉴 */}
@@ -90,12 +89,21 @@ const Header = () => {
                 onMouseEnter={() => setIsSubMenuOpen(item.label)}
                 onMouseLeave={() => setIsSubMenuOpen(null)}
               >
-                <a
-                  href="#"
-                  className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors"
-                >
-                  {item.label}
-                </a>
+                {item.label === '커뮤니티' ? (
+                  <Link
+                    to="/notice"
+                    className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    href="#"
+                    className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                )}
                 {item.submenu && (
                   <div
                     className={`absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-lg py-2 ${
@@ -103,13 +111,13 @@ const Header = () => {
                     } group-hover:block`}
                   >
                     {item.submenu.map((subItem, subIndex) => (
-                      <a
+                      <Link
                         key={subIndex}
-                        href="#"
+                        to={subItem === '공지사항' ? '/notice' : '#'}
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
                       >
                         {subItem}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -158,13 +166,13 @@ const Header = () => {
                 {item.submenu && isSubMenuOpen === item.label && (
                   <div className="pl-6 mt-1 space-y-1">
                     {item.submenu.map((subItem, subIndex) => (
-                      <a
+                      <Link
                         key={subIndex}
-                        href="#"
+                        to={subItem === '공지사항' ? '/notice' : '#'}
                         className="block px-4 py-2 text-sm text-gray-600 hover:bg-primary-50 hover:text-primary-600 rounded"
                       >
                         {subItem}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}

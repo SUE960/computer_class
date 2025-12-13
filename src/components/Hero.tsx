@@ -2,10 +2,10 @@ import { GraduationCap, Users, Award, BookOpen } from 'lucide-react'
 
 const Hero = () => {
   const stats = [
-    { icon: GraduationCap, label: '전국 최다 지점', value: '27개' },
-    { icon: Users, label: '누적 수강생', value: '50만명+' },
-    { icon: Award, label: '수상 경력', value: '10년 연속' },
-    { icon: BookOpen, label: '교육과정', value: '100개+' },
+    { icon: GraduationCap, label: '교육과정', value: '다양' },
+    { icon: Users, label: '수강생', value: '만족도 높음' },
+    { icon: Award, label: '자격증', value: '취득 지원' },
+    { icon: BookOpen, label: '수업시간', value: '오전/오후' },
   ]
 
   return (
@@ -20,12 +20,12 @@ const Hero = () => {
       <div className="container-custom relative z-10 py-20 lg:py-32">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            대한민국 교육브랜드 대상
+            영도웹컴퓨터학원
             <br />
-            <span className="text-yellow-300">IT·디자인 교육 부문 1위</span>
+            <span className="text-yellow-300">완전초보과정부터 자격증반까지</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-100">
-            전문 교육기관에서 시작하는 성공적인 커리어
+            부산 영도구 지역의 전문 컴퓨터 교육기관
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#" className="btn-secondary bg-white text-primary-600 hover:bg-gray-50">

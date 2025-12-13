@@ -6,75 +6,50 @@ interface CampusSelectorProps {
 }
 
 const CampusSelector = ({ selectedCampus, onSelectCampus }: CampusSelectorProps) => {
-  const campuses = [
-    '강남(본점)',
-    '역삼',
-    '종로',
-    '신촌',
-    '신도림',
-    '노원',
-    '인천(부평)',
-    '인천(구월)',
-    '인천(청라)',
-    '부천',
-    '안산',
-    '안양',
-    '수원',
-    '의정부',
-    '성남',
-    '천안',
-    '청주',
-    '대전(둔산)',
-    '대전(중앙로)',
-    '전주',
-    '광주(서구)',
-    '광주(첨단)',
-    '대구(동성로)',
-    '대구(교보타워)',
-    '울산',
-    '부산(서면)',
-    '부산(경성대)',
-  ]
-
   return (
     <section className="py-16 bg-gray-50">
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            전국 최다지점!
+            찾아오시는 길
           </h2>
-          <p className="text-lg text-gray-600 mb-2">
-            원하시는 캠퍼스를 선택해 주세요.
+          <p className="text-lg text-gray-600 mb-6">
+            영도웹컴퓨터학원으로 오시는 길을 안내해드립니다
           </p>
-          <div className="flex items-center justify-center gap-2 text-primary-600">
-            <MapPin className="w-5 h-5" />
-            <span className="font-semibold">현재 선택: {selectedCampus}</span>
+        </div>
+
+        <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12">
+          <div className="flex items-start gap-4 mb-6">
+            <MapPin className="w-8 h-8 text-primary-600 flex-shrink-0 mt-1" />
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">학원 위치</h3>
+              <p className="text-lg text-gray-700 mb-1">
+                부산 영도구 동삼로 84 신협 4층
+              </p>
+              <p className="text-gray-600">
+                동삼동 일동미라주아파트 근처 신협 4층
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-3">
-          {campuses.map((campus) => (
-            <button
-              key={campus}
-              onClick={() => onSelectCampus(campus)}
-              className={`p-4 rounded-lg border-2 transition-all duration-200 text-sm font-medium ${
-                selectedCampus === campus
-                  ? 'bg-primary-600 text-white border-primary-600 shadow-lg transform scale-105'
-                  : 'bg-white text-gray-700 border-gray-300 hover:border-primary-400 hover:bg-primary-50'
-              }`}
+          <div className="border-t pt-6">
+            <h4 className="font-semibold text-gray-900 mb-3">대중교통 이용 시</h4>
+            <ul className="space-y-2 text-gray-700">
+              <li>• 버스: 동삼동 일동미라주아파트 정류장 하차</li>
+              <li>• 지하철: 부산 1호선 남포역 하차 후 버스 환승</li>
+            </ul>
+          </div>
+
+          <div className="mt-6 pt-6 border-t">
+            <a
+              href="https://map.naver.com/p/entry/place/1518817991"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block btn-primary"
             >
-              {campus}
-            </button>
-          ))}
-        </div>
-
-        <div className="mt-8 text-center">
-          <a
-            href="#"
-            className="inline-block btn-primary"
-          >
-            캠퍼스 상세 정보 보기
-          </a>
+              네이버 지도에서 보기
+            </a>
+          </div>
         </div>
       </div>
     </section>

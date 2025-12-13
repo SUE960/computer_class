@@ -40,24 +40,26 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           {/* 회사 정보 */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold text-white mb-4">교육기관</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">영도웹컴퓨터학원</h3>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              대한민국 교육브랜드 대상 IT·디자인 교육 부문 1위
+              부산 영도구 지역의 전문 컴퓨터 교육기관
               <br />
-              전문 교육기관에서 시작하는 성공적인 커리어
+              초중고 대학생 성인반 완전초보과정부터 자격증반까지
             </p>
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-primary-400" />
-                <span className="text-white font-semibold">대표번호: 1588.9780</span>
+                <a href="tel:051-413-1234" className="text-white font-semibold hover:text-primary-400 transition-colors">
+                  대표번호: 051-413-1234
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-primary-400" />
-                <span>info@classroom.co.kr</span>
+                <span>info@youngdo-web.co.kr</span>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-primary-400 mt-1" />
-                <span>서울 강남구 테헤란로5길 24, 장연빌딩 3~7층</span>
+                <span>부산 영도구 동삼로 84 신협 4층<br className="hidden sm:inline" /> (동삼동 일동미라주아파트 근처)</span>
               </div>
             </div>
           </div>
@@ -140,10 +142,10 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
             <div>
-              <p>대표자: 김상곤 | 사업자등록번호: 214-86-26812</p>
-              <p>통신판매업신고: 2023-서울서초-2056호</p>
+              <p>부산 영도구 동삼로 84 신협 4층</p>
+              <p>동삼동 일동미라주아파트 근처</p>
             </div>
-            <p>© 2024 교육기관. All rights reserved.</p>
+            <p>© 2024 영도웹컴퓨터학원. All rights reserved.</p>
           </div>
         </div>
       </div>

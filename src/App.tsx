@@ -1,26 +1,15 @@
-import { useState } from 'react'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import CampusSelector from './components/CampusSelector'
-import Awards from './components/Awards'
-import Courses from './components/Courses'
-import Footer from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import NoticePage from './pages/NoticePage'
 
 function App() {
-  const [selectedCampus, setSelectedCampus] = useState<string>('강남(본점)')
-
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <Hero />
-      <CampusSelector 
-        selectedCampus={selectedCampus} 
-        onSelectCampus={setSelectedCampus} 
-      />
-      <Awards />
-      <Courses />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/notice" element={<NoticePage />} />
+      </Routes>
+    </Router>
   )
 }
 
