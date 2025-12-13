@@ -28,13 +28,11 @@ const NoticeBoard = ({ notices }: NoticeBoardProps) => {
       <div className="container-custom">
         <div className="rounded-xl p-6 md:p-8">
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-primary-600 p-2 rounded-lg flex items-center justify-center">
-              <img 
-                src="/icon/free-icon-map-1865269.png" 
-                alt="공지사항 아이콘" 
-                className="w-6 h-6 object-contain"
-              />
-            </div>
+            <img 
+              src="/icon/free-icon-announcements-12003595.png" 
+              alt="공지사항 아이콘" 
+              className="w-8 h-8 object-contain"
+            />
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
                 공지사항
