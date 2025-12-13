@@ -26,28 +26,19 @@ const NoticeBoard = ({ notices }: NoticeBoardProps) => {
   return (
     <section className="py-12 bg-white">
       <div className="container-custom">
-        <div className="bg-primary-50 rounded-xl p-6 md:p-8 border border-primary-200">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center gap-3">
-              <div className="bg-primary-600 p-2 rounded-lg">
-                <Bell className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-                  공지사항
-                </h2>
-                <p className="text-sm text-gray-600 mt-1">
-                  최신 소식과 안내사항을 확인하세요
-                </p>
-              </div>
+        <div className="rounded-xl p-6 md:p-8">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="bg-primary-600 p-2 rounded-lg">
+              <Bell className="w-6 h-6 text-white" />
             </div>
-            <Link
-              to="/notice"
-              className="hidden md:flex items-center gap-2 text-primary-600 hover:text-primary-700 font-semibold transition-colors"
-            >
-              더보기
-              <ChevronRight className="w-5 h-5" />
-            </Link>
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                공지사항
+              </h2>
+              <p className="text-sm text-gray-600 mt-1">
+                최신 소식과 안내사항을 확인하세요
+              </p>
+            </div>
           </div>
 
           <div className="space-y-3">
@@ -77,13 +68,14 @@ const NoticeBoard = ({ notices }: NoticeBoardProps) => {
             ))}
           </div>
 
-          {/* 모바일 더보기 버튼 */}
-          <div className="mt-6 md:hidden">
+          {/* 더보기 버튼 */}
+          <div className="mt-6">
             <Link
               to="/notice"
-              className="block w-full text-center py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors"
             >
-              전체 공지사항 보기
+              더보기
+              <ChevronRight className="w-5 h-5" />
             </Link>
           </div>
         </div>
