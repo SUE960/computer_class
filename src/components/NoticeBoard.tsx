@@ -18,7 +18,7 @@ const NoticeBoard = ({ notices }: NoticeBoardProps) => {
     {
       id: 1,
       title: '초중고 대학생 성인반 완전초보과정 부터 자격증반 모집중입니다 수업시간은 오전반 오후반 선택 가능합니다',
-      date: '2024-12-13',
+      date: '2025.12.01',
       isNew: true,
     },
   ]
@@ -55,12 +55,10 @@ const NoticeBoard = ({ notices }: NoticeBoardProps) => {
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-2">
-                      {notice.isNew && (
-                        <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded">
-                          NEW
-                        </span>
-                      )}
                       <span className="text-xs text-gray-500">{notice.date}</span>
+                      {notice.isNew && (
+                        <span className="w-2 h-2 bg-red-500 rounded-full flex-shrink-0"></span>
+                      )}
                     </div>
                     <h3 className="text-gray-900 font-medium line-clamp-2 group-hover:text-primary-600 transition-colors">
                       {notice.title}
