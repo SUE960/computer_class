@@ -170,6 +170,17 @@ const Footer = () => {
                     3d 계산기 아이콘 제작자: Freepik - Flaticon
                   </a>
                 </p>
+                <p>
+                  <a 
+                    href="https://www.flaticon.com/kr/free-icons/" 
+                    title="달력 아이콘" 
+                    className="hover:text-primary-400 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    달력 아이콘 제작자: VectorPortal - Flaticon
+                  </a>
+                </p>
               </div>
             </div>
           </div>

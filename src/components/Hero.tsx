@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Phone } from 'lucide-react'
+import { MapPin, Phone } from 'lucide-react'
 
 const Hero = () => {
   return (
@@ -67,7 +67,11 @@ const Hero = () => {
               {/* 캠퍼스 개강일정 */}
               <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 text-center group">
                 <div className="flex items-center justify-center w-16 h-16 mx-auto mb-3">
-                  <Calendar className="w-12 h-12 text-red-600 group-hover:scale-110 transition-transform" strokeWidth={2.5} />
+                  <img 
+                    src="/icon/free-icon-calendar-10770024.png" 
+                    alt="달력 아이콘" 
+                    className="w-12 h-12 object-contain group-hover:scale-110 transition-transform"
+                  />
                 </div>
                 <span className="text-sm font-medium text-gray-700 block">캠퍼스</span>
                 <span className="text-sm font-medium text-gray-700 block">개강일정</span>
