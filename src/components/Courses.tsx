@@ -1,4 +1,4 @@
-import { Code, Calculator, Brain } from 'lucide-react'
+import { Code, Calculator, Award } from 'lucide-react'
 
 const Courses = () => {
   const courseCategories = [
@@ -10,10 +10,10 @@ const Courses = () => {
       color: 'bg-blue-600',
     },
     {
-      icon: Brain,
-      title: 'AI',
-      description: '인공지능, 머신러닝, 딥러닝',
-      courses: ['AI 엔지니어', '데이터 사이언티스트', 'ML 엔지니어'],
+      icon: Award,
+      title: '컴퓨터 자격증',
+      description: '컴퓨터활용능력, ITQ, 워드프로세서',
+      courses: ['컴퓨터활용능력 1급', '컴퓨터활용능력 2급', 'ITQ OA Master', '워드프로세서'],
       color: 'bg-purple-600',
     },
     {
