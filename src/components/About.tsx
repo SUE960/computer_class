@@ -30,10 +30,17 @@ const About = () => {
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="container-custom">
         {/* 메인 소개 */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
-            WHY 영도웹컴퓨터학원
-          </h2>
+        <div className="mb-16">
+          <div className="flex items-start gap-5">
+            <img 
+              src="/icon/free-icon-list-18094401.png" 
+              alt="리스트 아이콘" 
+              className="w-8 h-8 object-contain mt-1"
+            />
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+              영도웹컴퓨터학원을 선택해야하는 이유
+            </h2>
+          </div>
         </div>
 
         {/* 특징 카드 그리드 */}
@@ -58,9 +65,16 @@ const About = () => {
         {/* 추가 설명 */}
         <div className="mt-16 bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-200">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 text-center">
-              WHY 영도웹컴퓨터학원
-            </h3>
+            <div className="flex items-start gap-5 justify-center">
+              <img 
+                src="/icon/free-icon-list-18094401.png" 
+                alt="리스트 아이콘" 
+                className="w-8 h-8 object-contain mt-1"
+              />
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                영도웹컴퓨터학원을 선택해야하는 이유
+              </h3>
+            </div>
           </div>
         </div>
       </div>
