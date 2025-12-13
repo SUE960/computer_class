@@ -7,12 +7,19 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:items-stretch">
           {/* 왼쪽: 히어로 배너 (2/3) */}
           <div className="lg:col-span-2 flex">
-            <div className="bg-white rounded-xl p-8 md:p-12 shadow-xl w-full flex flex-col justify-center">
-              {/* 배너 텍스트 */}
-              <div className="text-center">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-700">
-                  영도웹컴퓨터학원
-                </h1>
+            <div className="bg-white rounded-xl shadow-xl w-full overflow-hidden relative">
+              {/* 배너 이미지 */}
+              <img 
+                src="/banner.png" 
+                alt="영도웹컴퓨터학원 배너" 
+                className="w-full h-full object-cover"
+              />
+              {/* 스와이프 인디케이터 */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center gap-2">
+                <div className="flex gap-1">
+                  <div className="w-8 h-1 bg-primary-600 rounded-full"></div>
+                </div>
+                <span className="text-xs text-gray-600 font-medium ml-2">1/1</span>
               </div>
             </div>
           </div>
