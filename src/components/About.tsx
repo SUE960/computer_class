@@ -61,22 +61,6 @@ const About = () => {
             )
           })}
         </div>
-
-        {/* 추가 설명 */}
-        <div className="mt-16 bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-200">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex items-start gap-5 justify-center">
-              <img 
-                src="/icon/free-icon-list-18094401.png" 
-                alt="리스트 아이콘" 
-                className="w-8 h-8 object-contain mt-1"
-              />
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-                영도웹컴퓨터학원을 선택해야하는 이유
-              </h3>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )
