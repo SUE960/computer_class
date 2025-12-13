@@ -9,7 +9,7 @@ const Hero = () => {
   ]
 
   return (
-    <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
+    <section className="relative bg-primary-700 text-white overflow-hidden">
       {/* 배경 패턴 */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{

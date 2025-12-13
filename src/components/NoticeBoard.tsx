@@ -26,7 +26,7 @@ const NoticeBoard = ({ notices }: NoticeBoardProps) => {
   return (
     <section className="py-12 bg-white">
       <div className="container-custom">
-        <div className="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-6 md:p-8 border border-primary-200">
+        <div className="bg-primary-50 rounded-xl p-6 md:p-8 border border-primary-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
               <div className="bg-primary-600 p-2 rounded-lg">

@@ -6,42 +6,42 @@ const About = () => {
       icon: GraduationCap,
       title: '30년 노하우',
       description: '오랜 경험과 검증된 교육 시스템',
-      color: 'from-blue-500 to-blue-600',
+      color: 'bg-blue-600',
     },
     {
       icon: Lightbulb,
       title: '최신 트렌드',
       description: '현장에서 요구하는 최신 기술 반영',
-      color: 'from-yellow-500 to-yellow-600',
+      color: 'bg-yellow-600',
     },
     {
       icon: Target,
       title: '개별 맞춤 지도',
       description: '기초에서 자격증까지 개인별 맞춤 교육',
-      color: 'from-green-500 to-green-600',
+      color: 'bg-green-600',
     },
     {
       icon: BookOpen,
       title: '체계적 커리큘럼',
       description: '단계별 학습으로 실력 향상',
-      color: 'from-purple-500 to-purple-600',
+      color: 'bg-purple-600',
     },
     {
       icon: Users,
       title: '소규모 수업',
       description: '집중도 높은 소규모 반 운영',
-      color: 'from-pink-500 to-pink-600',
+      color: 'bg-pink-600',
     },
     {
       icon: Award,
       title: '자격증 취득 지원',
       description: '다양한 자격증 취득까지 완벽 지원',
-      color: 'from-red-500 to-red-600',
+      color: 'bg-red-600',
     },
   ]
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-16 md:py-24 bg-gray-50">
       <div className="container-custom">
         {/* 메인 소개 */}
         <div className="text-center mb-16">
@@ -71,7 +71,7 @@ const About = () => {
                 key={index}
                 className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group"
               >
-                <div className={`w-16 h-16 rounded-xl bg-gradient-to-r ${feature.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-16 h-16 rounded-xl ${feature.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <Icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">

@@ -7,54 +7,54 @@ const Courses = () => {
       title: 'IT개발',
       description: '프로그래밍, 소프트웨어 개발, 시스템 구축',
       courses: ['Java 개발자', 'Python 개발자', 'C++ 개발자', '시스템 아키텍트'],
-      color: 'from-blue-500 to-blue-600',
+      color: 'bg-blue-600',
     },
     {
       icon: Brain,
       title: 'AI',
       description: '인공지능, 머신러닝, 딥러닝',
       courses: ['AI 엔지니어', '데이터 사이언티스트', 'ML 엔지니어'],
-      color: 'from-purple-500 to-purple-600',
+      color: 'bg-purple-600',
     },
     {
       icon: Code,
       title: '웹개발',
       description: '프론트엔드, 백엔드, 풀스택 개발',
       courses: ['React 개발자', 'Node.js 개발자', '풀스택 개발자'],
-      color: 'from-green-500 to-green-600',
+      color: 'bg-green-600',
     },
     {
       icon: Palette,
       title: '편집디자인',
       description: '그래픽 디자인, 편집 디자인, 브랜딩',
       courses: ['그래픽 디자이너', '편집 디자이너', '브랜드 디자이너'],
-      color: 'from-pink-500 to-pink-600',
+      color: 'bg-pink-600',
     },
     {
       icon: Building2,
       title: '건축·산업디자인',
       description: '건축 설계, 인테리어, 제품 디자인',
       courses: ['건축 설계사', '인테리어 디자이너', '제품 디자이너'],
-      color: 'from-orange-500 to-orange-600',
+      color: 'bg-orange-600',
     },
     {
       icon: Gamepad2,
       title: '게임·영상·마야',
       description: '게임 개발, 영상 제작, 3D 모델링',
       courses: ['게임 개발자', '영상 편집자', '3D 아티스트'],
-      color: 'from-red-500 to-red-600',
+      color: 'bg-red-600',
     },
     {
       icon: Calculator,
       title: '세무회계·OA',
       description: '회계, 세무, 사무 자동화',
       courses: ['세무사', '회계사', 'OA 전문가'],
-      color: 'from-indigo-500 to-indigo-600',
+      color: 'bg-indigo-600',
     },
   ]
 
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-16 bg-white">
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -74,7 +74,7 @@ const Courses = () => {
                 className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 group"
               >
                 {/* 아이콘 헤더 */}
-                <div className={`bg-gradient-to-r ${category.color} p-6`}>
+                <div className={`${category.color} p-6`}>
                   <div className="flex items-center justify-between">
                     <Icon className="w-12 h-12 text-white" />
                     <span className="text-white/80 text-sm font-medium">국비지원 가능</span>
