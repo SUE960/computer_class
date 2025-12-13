@@ -1,4 +1,4 @@
-import { MessageCircle, Calculator, Calendar, MapPin, Phone, FileText, Home } from 'lucide-react'
+import { MessageCircle, Calculator, Calendar, MapPin, Phone } from 'lucide-react'
 
 // 커스텀 아이콘 컴포넌트 - 더 상세하고 입체적인 스타일
 const IconWrapper = ({ children, bgColor }: { children: React.ReactNode; bgColor: string }) => (
