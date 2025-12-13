@@ -1,4 +1,11 @@
-import { MessageCircle, Calculator, Calendar, MapPin, Phone } from 'lucide-react'
+import { MessageCircle, Calculator, Calendar, MapPin, Phone, FileText, Home } from 'lucide-react'
+
+// 커스텀 아이콘 컴포넌트 - 더 상세하고 입체적인 스타일
+const IconWrapper = ({ children, bgColor }: { children: React.ReactNode; bgColor: string }) => (
+  <div className={`${bgColor} rounded-2xl p-4 shadow-lg flex items-center justify-center w-16 h-16 mx-auto mb-3`}>
+    {children}
+  </div>
+)
 
 const Hero = () => {
   return (
@@ -38,28 +45,49 @@ const Hero = () => {
           <div className="lg:col-span-1 space-y-4">
             {/* 빠른 링크 그리드 */}
             <div className="grid grid-cols-2 gap-3">
-              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow text-center">
-                <MessageCircle className="w-8 h-8 mx-auto mb-2 text-primary-600" />
-                <span className="text-sm font-medium text-gray-700">온라인 예약상담</span>
+              {/* 온라인 예약상담 */}
+              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 text-center group">
+                <IconWrapper bgColor="bg-gradient-to-br from-blue-100 to-blue-200">
+                  <MessageCircle className="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform" strokeWidth={2.5} />
+                </IconWrapper>
+                <span className="text-sm font-medium text-gray-700 block">온라인</span>
+                <span className="text-sm font-medium text-gray-700 block">예약상담</span>
               </a>
-              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow text-center">
-                <Calculator className="w-8 h-8 mx-auto mb-2 text-primary-600" />
-                <span className="text-sm font-medium text-gray-700">수강료 조회</span>
+
+              {/* 수강료 조회 */}
+              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 text-center group">
+                <IconWrapper bgColor="bg-gradient-to-br from-green-100 to-green-200">
+                  <Calculator className="w-8 h-8 text-green-600 group-hover:scale-110 transition-transform" strokeWidth={2.5} />
+                </IconWrapper>
+                <span className="text-sm font-medium text-gray-700 block">수강료</span>
+                <span className="text-sm font-medium text-gray-700 block">조회</span>
               </a>
-              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow text-center">
-                <Calendar className="w-8 h-8 mx-auto mb-2 text-primary-600" />
-                <span className="text-sm font-medium text-gray-700">캠퍼스 개강일정</span>
+
+              {/* 캠퍼스 개강일정 */}
+              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 text-center group">
+                <IconWrapper bgColor="bg-gradient-to-br from-red-100 to-red-200">
+                  <Calendar className="w-8 h-8 text-red-600 group-hover:scale-110 transition-transform" strokeWidth={2.5} />
+                </IconWrapper>
+                <span className="text-sm font-medium text-gray-700 block">캠퍼스</span>
+                <span className="text-sm font-medium text-gray-700 block">개강일정</span>
               </a>
-              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow text-center">
-                <MapPin className="w-8 h-8 mx-auto mb-2 text-primary-600" />
-                <span className="text-sm font-medium text-gray-700">캠퍼스 위치조회</span>
+
+              {/* 캠퍼스 위치조회 */}
+              <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 text-center group">
+                <IconWrapper bgColor="bg-gradient-to-br from-purple-100 to-purple-200">
+                  <MapPin className="w-8 h-8 text-purple-600 group-hover:scale-110 transition-transform" strokeWidth={2.5} />
+                </IconWrapper>
+                <span className="text-sm font-medium text-gray-700 block">캠퍼스</span>
+                <span className="text-sm font-medium text-gray-700 block">위치조회</span>
               </a>
             </div>
 
             {/* 연락처 정보 */}
             <div className="bg-white rounded-xl p-4 shadow-md">
               <div className="flex items-center gap-2 mb-2">
-                <Phone className="w-5 h-5 text-primary-600" />
+                <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg p-2">
+                  <Phone className="w-5 h-5 text-gray-700" strokeWidth={2.5} />
+                </div>
                 <a href="tel:051-413-1234" className="text-lg font-bold text-gray-900">
                   051-413-1234
                 </a>
