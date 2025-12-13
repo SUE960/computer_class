@@ -43,21 +43,9 @@ const About = () => {
       <div className="container-custom">
         {/* 메인 소개 */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            영도웹컴퓨터학원
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            WHY 영도웹컴퓨터학원
           </h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed">
-              <span className="font-semibold text-primary-600">30년 노하우</span>와{' '}
-              <span className="font-semibold text-primary-600">최신 트렌드 지식</span>을 바탕으로
-            </p>
-            <p className="text-xl md:text-2xl text-gray-700 mb-6 leading-relaxed">
-              <span className="font-bold text-primary-700">최적의 수업</span>을 선사합니다
-            </p>
-            <div className="inline-block bg-primary-100 text-primary-800 px-6 py-3 rounded-full font-semibold text-lg">
-              기초에서 자격증까지 개별맞춤지도
-            </div>
-          </div>
         </div>
 
         {/* 특징 카드 그리드 */}
