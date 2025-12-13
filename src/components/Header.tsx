@@ -32,14 +32,14 @@ const Header = () => {
     <header className="bg-white shadow-md sticky top-0 z-50">
       {/* 메인 네비게이션 */}
       <nav className="container-custom">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-18 py-2">
           {/* 로고 */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img 
                 src="/logoimg.jpg" 
                 alt="영도웹컴퓨터학원" 
-                className="h-12 object-contain"
+                className="h-16 object-contain -my-1"
               />
             </Link>
           </div>
