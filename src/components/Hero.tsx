@@ -1,4 +1,4 @@
-import { Calculator, Calendar, MapPin, Phone } from 'lucide-react'
+import { Calendar, MapPin, Phone } from 'lucide-react'
 
 // 커스텀 아이콘 컴포넌트 - 더 상세하고 입체적인 스타일
 const IconWrapper = ({ children, bgColor }: { children: React.ReactNode; bgColor: string }) => (
@@ -61,7 +61,11 @@ const Hero = () => {
               {/* 수강료 조회 */}
               <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 text-center group">
                 <IconWrapper bgColor="bg-gradient-to-br from-green-100 to-green-200">
-                  <Calculator className="w-8 h-8 text-green-600 group-hover:scale-110 transition-transform" strokeWidth={2.5} />
+                  <img 
+                    src="/icon/free-icon-3d-calculator-10473465.png" 
+                    alt="계산기 아이콘" 
+                    className="w-8 h-8 object-contain group-hover:scale-110 transition-transform"
+                  />
                 </IconWrapper>
                 <span className="text-sm font-medium text-gray-700 block">수강료</span>
                 <span className="text-sm font-medium text-gray-700 block">조회</span>

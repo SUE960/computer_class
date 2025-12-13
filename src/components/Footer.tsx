@@ -147,17 +147,30 @@ const Footer = () => {
             </div>
             <div className="text-center md:text-right">
               <p>© 2024 영도웹컴퓨터학원. All rights reserved.</p>
-              <p className="mt-2">
-                <a 
-                  href="https://www.flaticon.com/kr/free-icons/" 
-                  title="상의 아이콘" 
-                  className="hover:text-primary-400 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  상의 아이콘 제작자: bukeicon - Flaticon
-                </a>
-              </p>
+              <div className="mt-2 space-y-1">
+                <p>
+                  <a 
+                    href="https://www.flaticon.com/kr/free-icons/" 
+                    title="상의 아이콘" 
+                    className="hover:text-primary-400 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    상의 아이콘 제작자: bukeicon - Flaticon
+                  </a>
+                </p>
+                <p>
+                  <a 
+                    href="https://www.flaticon.com/kr/free-icons/3d-" 
+                    title="3d 계산기 아이콘" 
+                    className="hover:text-primary-400 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    3d 계산기 아이콘 제작자: Freepik - Flaticon
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
