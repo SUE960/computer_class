@@ -1,4 +1,4 @@
-import { MessageCircle, Calculator, Calendar, MapPin, ChevronLeft, ChevronRight, Pause, Phone } from 'lucide-react'
+import { MessageCircle, Calculator, Calendar, MapPin, Phone } from 'lucide-react'
 
 const Hero = () => {
   return (
@@ -7,49 +7,33 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* 왼쪽: 히어로 배너 (2/3) */}
           <div className="lg:col-span-2">
-            <div className="bg-primary-100 rounded-xl p-8 md:p-12 relative overflow-hidden">
-              {/* 배지 */}
-              <div className="absolute top-6 left-6 bg-primary-200 text-primary-800 px-4 py-2 rounded-full text-sm font-medium">
-                K-디지털 트레이닝
-              </div>
-
-              {/* 생성형 AI 배지 */}
-              <div className="absolute top-6 right-6 bg-white rounded-full w-20 h-20 flex flex-col items-center justify-center shadow-lg">
-                <span className="text-xs font-bold text-primary-700">생성형 AI</span>
-                <span className="text-lg font-bold text-primary-600">AI</span>
-              </div>
-
+            <div className="bg-primary-100 rounded-xl p-8 md:p-12 relative overflow-hidden min-h-[400px] flex flex-col justify-center">
               {/* 메인 콘텐츠 */}
-              <div className="mt-16 md:mt-20">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-primary-700">빅데이터 분석 및 AI</span>
-                  <br />
-                  <span className="text-gray-900">개발 전문가 취업캠프</span>
+              <div className="text-center">
+                {/* 제목 */}
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-primary-700">
+                  영도웹컴퓨터학원
                 </h1>
                 
-                {/* 해시태그 */}
-                <div className="flex gap-2 mt-4">
-                  <span className="bg-primary-600 text-white px-3 py-1 rounded text-sm font-medium">#머신러닝</span>
-                  <span className="bg-primary-600 text-white px-3 py-1 rounded text-sm font-medium">#딥러닝</span>
+                {/* 설명 텍스트 */}
+                <div className="mb-6">
+                  <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
+                    <span className="font-semibold text-primary-600">30년 노하우</span>와{' '}
+                    <span className="font-semibold text-primary-600">최신 트렌드 지식</span>을 바탕으로
+                  </p>
+                  <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mt-2">
+                    <span className="font-bold text-gray-900">최적의 수업</span>을 선사합니다
+                  </p>
+                </div>
+
+                {/* 배지 */}
+                <div className="inline-block bg-primary-200 text-primary-800 px-6 py-3 rounded-full text-lg font-semibold">
+                  기초에서 자격증까지 개별맞춤지도
                 </div>
               </div>
 
-              {/* 슬라이더 네비게이션 */}
-              <div className="absolute bottom-6 left-6 flex items-center gap-2">
-                <button className="p-2 hover:bg-white/20 rounded">
-                  <ChevronLeft className="w-4 h-4 text-gray-700" />
-                </button>
-                <span className="text-sm text-gray-700 font-medium">04 | 09</span>
-                <button className="p-2 hover:bg-white/20 rounded">
-                  <ChevronRight className="w-4 h-4 text-gray-700" />
-                </button>
-                <button className="p-2 hover:bg-white/20 rounded ml-2">
-                  <Pause className="w-4 h-4 text-gray-700" />
-                </button>
-              </div>
-
-              {/* 3D 그래픽 요소 (간단한 표현) */}
-              <div className="absolute bottom-0 right-0 opacity-20">
+              {/* 장식 요소 (하단 우측) */}
+              <div className="absolute bottom-0 right-0 opacity-10">
                 <div className="grid grid-cols-3 gap-2 p-4">
                   {[...Array(9)].map((_, i) => (
                     <div key={i} className="w-8 h-8 bg-primary-600 rounded"></div>
