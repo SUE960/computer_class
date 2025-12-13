@@ -2,7 +2,7 @@ import { MapPin } from 'lucide-react'
 
 const CampusSelector = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="location" className="py-16 bg-gray-50">
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
