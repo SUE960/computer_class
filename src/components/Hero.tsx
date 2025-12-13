@@ -1,4 +1,4 @@
-import { Search, MessageCircle, Calculator, Calendar, MapPin, ChevronLeft, ChevronRight, Pause, Phone } from 'lucide-react'
+import { MessageCircle, Calculator, Calendar, MapPin, ChevronLeft, ChevronRight, Pause, Phone } from 'lucide-react'
 
 const Hero = () => {
   return (
@@ -59,35 +59,8 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* 오른쪽: 검색 및 유틸리티 (1/3) */}
+          {/* 오른쪽: 유틸리티 (1/3) */}
           <div className="lg:col-span-1 space-y-4">
-            {/* 검색 바 */}
-            <div className="bg-white rounded-xl p-4 shadow-md">
-              <div className="flex gap-2">
-                <input
-                  type="text"
-                  placeholder="원하는 과정을 검색해보세요!"
-                  className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-sm"
-                />
-                <button className="bg-primary-600 text-white px-4 py-3 rounded-lg hover:bg-primary-700 transition-colors">
-                  <Search className="w-5 h-5" />
-                </button>
-              </div>
-
-              {/* 인기 검색 태그 */}
-              <div className="flex flex-wrap gap-2 mt-4">
-                {['#자바', '#앱개발', '#파이썬', '#인공지능', '#데이터', '#정보보안'].map((tag, index) => (
-                  <a
-                    key={index}
-                    href="#"
-                    className="bg-primary-50 text-primary-700 px-3 py-1 rounded text-sm hover:bg-primary-100 transition-colors"
-                  >
-                    {tag}
-                  </a>
-                ))}
-              </div>
-            </div>
-
             {/* 빠른 링크 그리드 */}
             <div className="grid grid-cols-2 gap-3">
               <a href="#" className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow text-center">
