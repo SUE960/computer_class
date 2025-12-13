@@ -55,7 +55,7 @@ const NoticeBoard = ({ notices }: NoticeBoardProps) => {
                     <div className="flex items-center gap-2 mb-2">
                       <span className="text-xs text-gray-500">{notice.date}</span>
                       {notice.isNew && (
-                        <span className="w-2 h-2 bg-red-500 rounded-full flex-shrink-0"></span>
+                        <span className="text-xs text-red-500 font-semibold">NEW</span>
                       )}
                     </div>
                     <h3 className="text-gray-900 font-medium line-clamp-2 group-hover:text-primary-600 transition-colors">
