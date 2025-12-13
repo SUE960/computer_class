@@ -8,29 +8,12 @@ const Hero = () => {
           {/* 왼쪽: 히어로 배너 (2/3) */}
           <div className="lg:col-span-2 flex">
             <div className="bg-white rounded-xl p-8 md:p-12 shadow-xl w-full flex flex-col justify-center">
-              {/* 메인 콘텐츠 */}
-              <div className="text-center">
-                {/* 제목 */}
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-primary-700">
-                  영도웹컴퓨터학원
-                </h1>
-                
-                {/* 설명 텍스트 */}
-                <div className="mb-6">
-                  <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-                    <span className="font-semibold text-primary-600">30년 노하우</span>와{' '}
-                    <span className="font-semibold text-primary-600">최신 트렌드 지식</span>을 바탕으로
-                  </p>
-                  <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mt-2">
-                    <span className="font-bold text-gray-900">최적의 수업</span>을 선사합니다
-                  </p>
-                </div>
-
-                {/* 배지 */}
-                <div className="inline-block bg-primary-100 text-primary-800 px-6 py-3 rounded-full text-lg font-semibold">
-                  기초에서 자격증까지 개별맞춤지도
-                </div>
-              </div>
+              {/* 배너 이미지 */}
+              <img 
+                src="/banner.png" 
+                alt="영도웹컴퓨터학원 배너" 
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
 
