@@ -33,12 +33,12 @@ const About = () => {
         <div className="mb-16">
           <div className="flex items-start gap-5">
             <img 
-              src="/icon/free-icon-list-18094401.png" 
-              alt="리스트 아이콘" 
+              src="/icon/free-icon-star-1828884.png" 
+              alt="별 아이콘" 
               className="w-8 h-8 object-contain mt-1 ml-2"
             />
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-              영도웹컴퓨터학원 선택 이유
+              영도웹컴퓨터학원의 강점
             </h2>
           </div>
         </div>
