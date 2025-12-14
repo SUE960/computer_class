@@ -37,7 +37,7 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img 
-                src="/logo_horizon.jpeg" 
+                src="/logo_vertical.jpeg" 
                 alt="영도웹컴퓨터학원" 
                 className="h-16 object-contain -my-1"
               />
