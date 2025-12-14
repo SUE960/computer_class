@@ -15,7 +15,7 @@ const Hero = () => {
                 className="w-full h-full object-cover absolute inset-0"
               />
               {/* 텍스트 오버레이 */}
-              <div className="absolute inset-0 flex flex-col justify-center items-start px-4 sm:px-6 md:px-12">
+              <div className="absolute inset-0 flex flex-col justify-end items-start px-4 sm:px-6 md:px-12 pb-16 sm:pb-20 md:pb-24">
                 <div className="text-white text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-left mb-3 sm:mb-4 leading-relaxed">
                   <p>30년 노하우와 최신 트렌드 지식을 바탕으로</p>
                   <p>최적의 수업을 선사합니다</p>
