@@ -39,7 +39,7 @@ const Header = () => {
               <img 
                 src="/logo_vertical.jpeg" 
                 alt="영도웹컴퓨터학원" 
-                className="h-14 object-contain -my-1"
+                className="h-12 object-contain -my-1"
               />
             </Link>
           </div>
