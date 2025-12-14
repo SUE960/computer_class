@@ -7,12 +7,12 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:items-stretch">
           {/* 왼쪽: 히어로 배너 (2/3) */}
           <div className="lg:col-span-2 flex">
-            <div className="bg-white rounded-xl shadow-xl w-full overflow-hidden relative">
+            <div className="bg-white rounded-xl shadow-xl w-full overflow-hidden relative min-h-[350px] lg:min-h-0 lg:h-auto">
               {/* 배너 이미지 */}
               <img 
                 src="/banner2background.jpg" 
                 alt="영도웹컴퓨터학원 배너" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover absolute inset-0"
               />
               {/* 텍스트 오버레이 */}
               <div className="absolute inset-0 flex flex-col justify-center items-start px-4 sm:px-6 md:px-12">
