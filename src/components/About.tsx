@@ -29,22 +29,23 @@ const About = () => {
   return (
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="container-custom">
-        {/* 메인 소개 */}
-        <div className="mb-16">
-          <div className="flex items-start gap-5">
-            <img 
-              src="/icon/free-icon-star-1828884.png" 
-              alt="별 아이콘" 
-              className="w-8 h-8 object-contain mt-1 ml-2"
-            />
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-              영도웹컴퓨터학원의 강점
-            </h2>
+        <div className="rounded-xl p-6 md:p-8">
+          {/* 메인 소개 */}
+          <div className="mb-16">
+            <div className="flex items-start gap-5">
+              <img 
+                src="/icon/free-icon-star-1828884.png" 
+                alt="별 아이콘" 
+                className="w-8 h-8 object-contain mt-1 ml-2"
+              />
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                영도웹컴퓨터학원의 강점
+              </h2>
+            </div>
           </div>
-        </div>
 
-        {/* 특징 카드 그리드 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {/* 특징 카드 그리드 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => {
             return (
               <div
@@ -60,6 +61,7 @@ const About = () => {
               </div>
             )
           })}
+          </div>
         </div>
       </div>
     </section>
